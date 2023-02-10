@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <style>
+        form {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form method="post" action="php.php">
+        <div name="Username">
+            <input type="text" name="Username" id="user" placeholder="Enter a vaild Username" required>
+        </div>
+        <br>
+        <div>
+            <input type="email" name="mail" placeholder="Enter a vaild email" required>
+        </div>
+        <br>
+        <div name="password">
+            <input type="password" name="password" id="password" placeholder="Enter a vaild password" minlength="8"
+                maxlength="32" required>
+        </div>
+        <br>
+        <div name="win">
+            <input type="radio" name="os" id="win" value="Windows">
+            <label for="win">Windows</label>
+        </div>
+        <div name="lin">
+            <input type="radio" name="os" id="lin" value="Linux">
+            <label for="lin">Linux</label>
+        </div>
+        <div name="mac">
+            <input type="radio" name="os" id="mac" value="MacOs">
+            <label for="mac">MacOs</label>
+        </div>
+        <br>
+        <div name="atributes">
+            <p>What is your programing languages ?</p>
+            <div>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" name="CSS" id="CSS">
+                <label for="CSS">CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="JS" id="JS">
+                <label for="JS">JavaScript</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Py" id="Py">
+                <label for="Py">Python</label>
+            </div>
+            <div>
+                <input type="checkbox" name="C#" id="C#">
+                <label for="C#">C#</label>
+            </div>
+        </div>
+        <br>
+        <label for="languages">Select your language</label>
+        <select name="languages" id="languages">
+            <option value="Arabic">Arabic </option>
+            <option value="English">English</option>
+            <option value="Germany">Germany</option>
+            <option value="Or All Of Them">Or All Of Them</option>
+        </select>
+        <textarea name="" cols="30" rows="10"></textarea>
+        <br>
+        <div name="submit & reset">
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
