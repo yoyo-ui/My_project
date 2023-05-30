@@ -1,82 +1,117 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        form {
-            margin: 10px;
+        .intro {
+            display: block;
+            padding: 50px;
+            background-color: #eee;
+            border: 10px solid red;
+        }
+
+        .mk {
+            border: inherit;
+            padding: inherit;
+            background-color: inherit;
+            text-align: center;
+            font-family: 'Cairo Play', sans-serif;
+            font-size: 30px;
+        }
+
+        pre {
+            background-color: rgb(57, 57, 57);
+            display: inline-block;
+            width: 430;
+            border: 10px solid rgb(129, 129, 129)
+        }
+
+
+        .DOCTYPE-html {
+            color: #7a7a7a;
+        }
+
+        .element {
+            color: rgb(0, 119, 255);
+        }
+
+        .atrip {
+            color: aqua;
+        }
+
+        .cuttations {
+            color: rgb(255, 123, 0);
+        }
+
+        div {
+            display: inline;
+        }
+
+        span.css {
+            color: yellow;
+        }
+
+        div.css {
+            color: aqua;
+        }
+
+        .text {
+            color: white;
+        }
+
+        body {
+            text-transform: capitalize;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-
-    <form method="post" action="php.php">
-        <div name="Username">
-            <input type="text" name="Username" id="user" placeholder="Enter a vaild Username" required>
-        </div>
-        <br>
-        <div>
-            <input type="email" name="mail" placeholder="Enter a vaild email" required>
-        </div>
-        <br>
-        <div name="password">
-            <input type="password" name="password" id="password" placeholder="Enter a vaild password" minlength="8"
-                maxlength="32" required>
-        </div>
-        <br>
-        <div name="win">
-            <input type="radio" name="os" id="win" value="Windows">
-            <label for="win">Windows</label>
-        </div>
-        <div name="lin">
-            <input type="radio" name="os" id="lin" value="Linux">
-            <label for="lin">Linux</label>
-        </div>
-        <div name="mac">
-            <input type="radio" name="os" id="mac" value="MacOs">
-            <label for="mac">MacOs</label>
-        </div>
-        <br>
-        <div name="atributes">
-            <p>What is your programing languages ?</p>
-            <div>
-                <input type="checkbox" name="html" id="html">
-                <label for="html">HTML</label>
-            </div>
-            <div>
-                <input type="checkbox" name="CSS" id="CSS">
-                <label for="CSS">CSS</label>
-            </div>
-            <div>
-                <input type="checkbox" name="JS" id="JS">
-                <label for="JS">JavaScript</label>
-            </div>
-            <div>
-                <input type="checkbox" name="Py" id="Py">
-                <label for="Py">Python</label>
-            </div>
-            <div>
-                <input type="checkbox" name="C#" id="C#">
-                <label for="C#">C#</label>
-            </div>
-        </div>
-        <br>
-        <label for="languages">Select your language</label>
-        <select name="languages" id="languages">
-            <option value="Arabic">Arabic </option>
-            <option value="English">English</option>
-            <option value="Germany">Germany</option>
-            <option value="Or All Of Them">Or All Of Them</option>
-        </select>
-        <br>
-        <div name="submit & reset">
-            <input type="submit" value="Save">
-            <input type="reset" value="Reset">
-        </div>
-    </form>
+    <div class="intro">
+        <p class="mk">3mk is a hacker</p>
+    </div>
+    <div>
+        <pre>
+        <code>
+           <<span class="DOCTYPE-html">!DOCTYPE html</span>>
+             <div class="elem">
+            <<span class="element">html </span><span class="atrip">lang =</span><span class="cuttations">"en"</span>>
+            </div class="head">
+                <<span class="element">head</span>>
+                    < <span class="element">style</span>>
+                        <span class="css">
+                             body { <div class="css">
+                            background-color :<span class="cuttations"> blue </span>;     
+                            <span class="css">}</span>
+                             </div>
+                        </span>
+                        <div class="title">
+                                 <<span class="element">title</span>><div class="text">test</div><<span style="display: inline;" class="element">/title</span>>
+                    <<span class="element">/style</span>>
+                <<span class="element">/head</span>>
+           </div>
+           <div class="body">
+            <<span class="element">body</span>>
+            <span class="text">
+                hi its me 
+            </span>
+            <<span class="element">/body</span>>
+            <<span class="element">/html</span>>
+           </div>
+        </code> 
+        </pre>
+    </div>
 </body>
 
 </html>
